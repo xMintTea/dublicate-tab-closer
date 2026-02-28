@@ -34,5 +34,8 @@ document.getElementById("close_tabs").addEventListener("click", () => {
     for (const extra_tab of extra_tabs) {
         chrome.tabs.remove(extra_tab.id)
     }
+
+    tab_array.length = 0;
+    extra_tabs.length = 0;
 })
 
