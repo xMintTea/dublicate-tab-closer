@@ -6,7 +6,6 @@ const extra_tabs = [];
 function getTabs(callback) {
 chrome.tabs.query({}, (tabs) => {
     for (const tab of tabs) {
-        counter++;
         if (!tab_array.includes(tab.url)) {
             tab_array.push(tab.url)
         } else {
